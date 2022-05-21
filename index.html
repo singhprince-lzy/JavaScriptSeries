@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        p {
+            background: aqua;
+            border: 3px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        span {
+            background: hotpink;
+            border: 1px solid black;
+        }
+        
+        .positioned {
+            position: absolute;
+            background: yellow;
+            top: 30px;
+            left: 30px;
+            z-index:auto;/* equal to 0*/
+        }
+        
+        p:nth-of-type(1) {
+            position: absolute;
+            background: lime;
+            top: 10px;
+            right: 30px;
+            z-index: 1; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>z-index</h1>
+
+    <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+
+    <p class="positioned">Now I'm absolutely positioned relative to the <code>&lt;body&gt;</code> element, not the <code>&lt;html&gt;</code> element!</p>
+
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins, not both.</p>
+
+    <p>Inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline elements <span>wrap onto a new line if possible — like this one containing text</span>,
+        or just go on to a new line if not, much like this image will do: 
+        <img src="https://mdn.mozillademos.org/files/13360/long.jpg">
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            margin-top: 300px;
+            position: absolute;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4>This is Thumbnail</h4>
+        <img src="https://images.unsplash.com/photo-1650274790136-61f755869064?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fEJKSk10dGVESkE0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500" alt="">
+
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Elements</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: Helvetica;
+        }
+        
+        .box {
+            float:left;
+            margin-right:15px;
+            width: 150px;
+            height: 100px;
+            padding: 1em;
+            background-color:lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple float example</h1>
+    <div class="box">Float</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet.
+    </p>
+    <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed
+        pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus.</p>
+    <p>Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis.
+        Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        p {
+            background:lightblue;
+            border: 2px solid rgb(255, 84, 104);
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        span {
+            background: yellow;
+            border: 1px solid black;
+        }
+        
+        .positioned {
+            position: static;
+            background: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Static Positioning</h1>
+
+    <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+
+    <p class="positioned">By default we span 100% of the width of our parent element, and we are as tall as our child content. Our total width and height is our content + padding + border width/height.</p>
+
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins, not both.</p>
+
+    <p>Inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline elements will <span>wrap onto a new line if possible (like this one containing text)</span>,
+        or just go on to a new line if not, much like this image will do:
+        <img src="https://mdn.mozillademos.org/files/13360/long.jpg">
+    </p>
+</body>
+
+</html> -->

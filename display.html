@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tile{
+            height: 100px;
+            width: 25%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+    <script>
+        /*
+        const inp=document.querySelector("#inp")
+        const out=document.querySelector("#output")
+
+        inp.addEventListener('keydown',(event)=>{
+            out.textContent=`you pressed+ "${event.key}"`
+            
+            if(event.key===13){
+                console.log(event.key);
+                inp.textContent="";
+            }
+        })
+*/
+
+
+
+
+
+
+
+
+
+
+
+        
+        //const btn= document.querySelector("button")
+
+        function random(number){
+            return Math.floor(Math.random()*number+1)
+        }
+    
+        function changeColor(e){
+            const randCol=`rgb(${random(255)},${random(255)},${random(255)})`
+            e.target.style.backgroundColor=randCol
+            console.log(e)
+        }
+        const container=document.querySelector(".container")
+        container.addEventListener("click",changeColor)
+
+        //btn.addEventListener("click",changeColor)
+       /* btn.addEventListener("dblclick",()=>{
+            alert("You have double clicked button");
+        })
+
+        btn.addEventListener("mouseover",()=>{
+            alert("Mouse over")
+        })
+        btn.addEventListener("mouseout",()=>{
+            alert("mouse out")*/
+        
+        //btn.removeEventListener("click",changeColor)
+    </script>
+</body>
+</html>
